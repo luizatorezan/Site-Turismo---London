@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>London city</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- PRIMEIRA PÁGINA -->
+    <div class="geral" id="pagina1">
+        <!-- Bloco da Esquerda (Texto) -->
+        <div class="conteudo-texto">
+            <h1 class="titulo">London <br>big city</h1>
+            
+            <p class="descricao">
+                Londres combina séculos de história e arquitetura icónica
+                com a energia vibrante de uma metrópole moderna e cosmopolita.
+            </p>
+
+            <a href="#pagina2" class="link-seta">
+                <img src="img/seta.png" alt="Próxima página" class="seta">
+            </a>
+        </div>
+
+        <!-- Bloco da Direita (Imagem) -->
+        <div class="conteudo-imagem">
+            <img src="img/london.jpg" alt="big city" class="imagem">
+        </div>
+    </div>
+
+    <!-- SEGUNDA PÁGINA -->
+    <div class="geral" id="pagina2">
+        <!-- Bloco da Esquerda (Texto) -->
+        <div class="conteudo-texto">
+            <h2 class="titulo">Cidade <br>cinzenta</h2>
+            <h4 class="subtitulo">vale a pena conhecer</h4>
+            
+            <p class="descricao">
+                Explore as imagens dessa cidade apaixonante
+            </p>
+
+            <a href="#pagina3" class="link-seta">
+                <img src="img/seta.png" alt="Próxima página" class="seta">
+            </a>
+        </div>
+
+        <!-- Bloco da Direita (Grelha com 8 Imagens) -->
+        <div class="conteudo-imagem">
+            <div class="galeria-grid">
+                <img src="img/img1.jpg" alt="London 1">
+                <img src="img/img2.jpg" alt="London 2">
+                <img src="img/img3.jpg" alt="London 3">
+                <img src="img/img4.jpg" alt="London 4">
+                <img src="img/img5.jpg" alt="London 5">
+                <img src="img/img6.jpg" alt="London 6">
+                <img src="img/img7.jpg" alt="London 7">
+                <img src="img/img8.jpg" alt="London 8">
+            </div>
+        </div>
+    </div>
+
+    <!-- TERCEIRA PÁGINA -->
+    <div class="geral" id="pagina3">
+        <!-- Bloco Esquerdo -->
+        <div class="conteudo-texto">
+            <h2 class="titulo">Pontos <br>Turísticos</h2>
+            <h4 class="subtitulo">CONHEÇA LONDRES</h4>
+            <p class="descricao">Uma caminhada pelos lugares mais icónicos da capital inglesa.</p>
+            
+            <a href="#pagina4" class="link-seta">
+                <img src="img/seta.png" alt="Próxima página" class="seta">
+            </a>
+        </div>
+
+        <!-- Bloco Direito -->
+        <div class="conteudo-imagem pg3-direita">
+            <p class="pg3-texto">
+                Londres é uma metrópole vibrante onde a tradição milenar se encontra com o dinamismo moderno. Cortada pelo icónico Rio Tamisa, a cidade abriga museus de classe mundial, parques deslumbrantes e uma cultura cosmopolita única que atrai milhões de visitantes todos os anos.
+            </p>
+            <div class="pg3-container-img">
+                <img src="img/img9.jpg" alt="London Eye" class="pg3-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- QUARTA PÁGINA (CONTATO REFORMULADA) -->
+    <div class="geral" id="pagina4">
+        <!-- Bloco Esquerdo (Com o tom de cor e padrão das outras páginas) -->
+        <div class="conteudo-texto pg4-esquerda">
+            <div>
+                <h2 class="titulo">FALE <br>CONOSCO</h2>
+                <h4 class="subtitulo">PLANEJE SUA VIAGEM</h4>
+                <p class="descricao">
+                    Estamos prontos para ajudar você a planejar o seu roteiro perfeito pela capital britânica.
+                </p>
+            </div>
+            
+            <a href="#pagina1" class="link-seta link-voltar">
+                <img src="img/seta.png" alt="Voltar" class="seta seta-subir">
+                <span>Voltar ao início</span>
+            </a>
+        </div>
+
+        <!-- Bloco Direito (Com dados de contato fictícios) -->
+        <div class="conteudo-imagem pg4-direita">
+            <p class="pg4-texto-topo">
+                <strong>Entre em contato com a nossa agência</strong> para tirar dúvidas, agendar passeios guiados ou montar pacotes personalizados.
+            </p>
+
+            <div class="pg4-grid-minimal">
+                <div class="item-wireframe">
+                    <div class="box-icone">📍</div>
+                    <span>Oxford Street, 123 - Londres</span>
+                </div>
+                <div class="item-wireframe">
+                    <div class="box-icone">📞</div>
+                    <span>+44 20 7946 0912</span>
+                </div>
+                <div class="item-wireframe">
+                    <div class="box-icone">✉️</div>
+                    <span>contato@londontours.com</span>
+                </div>
+                <div class="item-wireframe">
+                    <div class="box-icone">💬</div>
+                    <span>+44 7700 900077 (WhatsApp)</span>
+                </div>
+                <div class="item-wireframe">
+                    <div class="box-icone">⏰</div>
+                    <span>Seg a Sex: 09h às 18h</span>
+                </div>
+                <div class="item-wireframe">
+                    <div class="box-icone">🌐</div>
+                    <span>@londontours_oficial</span>
+                </div>
+            </div>
+
+            <p class="pg4-texto-rodape">
+                Atendimento em português e inglês. Garanta sua reserva com antecedência e aproveite o melhor de Londres com total conforto e segurança.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>

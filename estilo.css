@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Rolamento suave ao clicar nas setas de navegação */
+html {
+    scroll-behavior: smooth;
+}
+
+/* CONTAINER PAI (Cada uma das 4 páginas) */
+.geral {
+    width: 90%;
+    max-width: 1200px;
+    height: 600px;
+    margin: 40px auto 80px auto;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(39, 124, 118, 0.25);
+}
+
+/* ===================================
+   BLOCO ESQUERDO (PADRÃO PARA TODAS AS PÁGINAS)
+   =================================== */
+.conteudo-texto {
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(135deg, #458c8b 0%, hwb(188 3% 64%) 100%);
+    padding: 60px 40px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* TÍTULOS E TEXTOS DO LADO ESQUERDO */
+.titulo {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.subtitulo {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #e0f2f1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.descricao {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #f0f8ff;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    max-width: 85%;
+}
+
+/* SETA PADRÃO */
+.link-seta {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.seta {
+    width: 32px;
+    height: auto;
+    filter: brightness(0) invert(1); /* Torna a imagem da seta branca */
+    transition: transform 0.3s ease;
+}
+
+.seta:hover {
+    transform: scale(1.1);
+}
+
+/* ===================================
+   BLOCO DIREITO (CONTAINER DE CONTEÚDO/IMAGENS)
+   =================================== */
+.conteudo-imagem {
+    width: 60%;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Imagem única da Página 1 */
+.conteudo-imagem > .imagem {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===================================
+   PÁGINA 2 - GALERIA DE IMAGENS
+   =================================== */
+.galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.galeria-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* ===================================
+   PÁGINA 3 - PONTOS TURÍSTICOS
+   =================================== */
+.pg3-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+}
+
+.pg3-texto {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.pg3-container-img {
+    width: 100%;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.pg3-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* ===================================
+   PÁGINA 4 - FALE CONOSCO (CONTATO)
+   =================================== */
+
+/* Mantém o mesmo tom de gradiente escuro das outras páginas */
+.pg4-esquerda {
+    background: linear-gradient(135deg, #458c8b 0%, hwb(188 3% 64%) 100%) !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px !important;
+    text-align: center;
+}
+
+/* Link para subir de volta ao topo */
+.link-voltar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.link-voltar span {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Seta apontada para cima */
+.seta-subir {
+    transform: rotate(180deg);
+    filter: brightness(0) invert(1) !important;
+}
+
+/* Lado direito da Página 4 */
+.pg4-direita {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 35px !important;
+    background-color: #ffffff;
+}
+
+.pg4-texto-topo, .pg4-texto-rodape {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    color: #555555;
+    line-height: 1.6;
+}
+
+/* Grelha dos itens de contato */
+.pg4-grid-minimal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 15px;
+    margin: 20px 0;
+}
+
+.item-wireframe {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Caixa cinza clara para os ícones */
+.box-icone {
+    width: 40px;
+    height: 40px;
+    background-color: #f2f5f5;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.item-wireframe span {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #333333;
+    font-weight: 600;
+    line-height: 1.3;
+}
